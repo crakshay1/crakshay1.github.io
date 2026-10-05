@@ -26,6 +26,7 @@
     font-family: "Orbitron";
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.180);
+    height: 100%;
 }
 
 .proj a {

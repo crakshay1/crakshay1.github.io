@@ -28,7 +28,7 @@ function App() {
           <Slide></Slide>
       </Window>
 
-      <Window taille = "2vh" title="PROJECTS" hauteur="76.5vh" largeur="28vw" haut="13vh" gauche="68vw">
+      <Window taille = "2vh" title="PROJECTS" hauteur="80vh" largeur="28vw" haut="13vh" gauche="68vw">
         <Projects></Projects>
       </Window>
 
