@@ -1,0 +1,73 @@
+@keyframes Opening {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.96);
+        filter: blur(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+h1{
+    font-family: "Orbitron";
+    color: whitesmoke;
+    text-align: center;
+
+}
+h1::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    top: 3.5vh;
+    border-bottom: 1px solid white; padding-bottom: 5px;
+}
+
+.fen{
+    background-color: rgba(22, 173, 211, 0.164);
+    border: 2px solid rgba(255, 255, 255, 0.192);
+    animation: Opening 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fen::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 5%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.fen::after{
+    content: "";
+    position: absolute;
+    inset: 0 95%;
+    width: 5%;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+.border{
+    z-index: -1;
+    inset: 0;
+    position: inherit;
+
+}
+.border::before{
+    content: "";
+    inset: 0 -0.5%;
+    height: 20%;
+    position: inherit;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+}
+.border::after{
+    content: "";
+    inset: 0 -0.5%;
+    position: inherit;
+    top:80%;
+    border-right: 3px solid white;
+    border-left: 3px solid white;
+
+}

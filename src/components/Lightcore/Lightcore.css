@@ -1,0 +1,163 @@
+@keyframes bouge {
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+}
+
+@keyframes spin {
+    0%   { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes hear {
+    0%   { transform: rotate(0deg)   scale(1); }
+    10%  { transform: scale(0.5);}
+    50%  { transform: rotate(180deg) scale(1.05); }
+    90%  { transform: rotate(360deg) scale(1.05); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes speak {
+    0% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+        transform: translate(0px, 0px) scale(1) rotate(0deg);
+    }
+
+    5% {
+        border-radius: 68% 32% 44% 56% / 55% 38% 62% 45%;
+        transform: translate(-2px, 1px) scale(1.08) rotate(-1deg);
+    }
+
+    10% {
+        border-radius: 40% 60% 66% 34% / 42% 65% 35% 58%;
+        transform: translate(2px, -1px) scale(0.93) rotate(1.2deg);
+    }
+
+    15% {
+        border-radius: 72% 28% 36% 64% / 60% 40% 58% 42%;
+        transform: translate(-1px, 2px) scale(1.13) rotate(-1.8deg);
+    }
+
+    20% {
+        border-radius: 32% 68% 58% 42% / 68% 32% 48% 52%;
+        transform: translate(2px, 0px) scale(0.91) rotate(1deg);
+    }
+
+    27% {
+        border-radius: 61% 39% 71% 29% / 35% 69% 31% 65%;
+        transform: translate(-3px, -2px) scale(1.10) rotate(-2deg);
+    }
+
+    34% {
+        border-radius: 29% 71% 48% 52% / 72% 28% 60% 40%;
+        transform: translate(2px, 3px) scale(0.95) rotate(2deg);
+    }
+
+    41% {
+        border-radius: 64% 36% 31% 69% / 40% 62% 38% 60%;
+        transform: translate(-1px, -2px) scale(1.14) rotate(-1deg);
+    }
+
+    48% {
+        border-radius: 37% 63% 73% 27% / 61% 39% 67% 33%;
+        transform: translate(3px, 0px) scale(0.92) rotate(1.5deg);
+    }
+
+    55% {
+        border-radius: 58% 42% 28% 72% / 30% 70% 40% 60%;
+        transform: translate(-2px, 2px) scale(1.09) rotate(-2deg);
+    }
+
+    62% {
+        border-radius: 34% 66% 56% 44% / 74% 26% 52% 48%;
+        transform: translate(1px, -3px) scale(0.90) rotate(2deg);
+    }
+
+    69% {
+        border-radius: 74% 26% 39% 61% / 48% 52% 70% 30%;
+        transform: translate(-3px, 1px) scale(1.15) rotate(-1.5deg);
+    }
+
+    76% {
+        border-radius: 42% 58% 69% 31% / 60% 40% 32% 68%;
+        transform: translate(2px, 2px) scale(0.94) rotate(1deg);
+    }
+
+    83% {
+        border-radius: 66% 34% 46% 54% / 34% 66% 58% 42%;
+        transform: translate(-1px, -1px) scale(1.11) rotate(-2deg);
+    }
+
+    90% {
+        border-radius: 35% 65% 63% 37% / 66% 34% 44% 56%;
+        transform: translate(3px, -2px) scale(0.93) rotate(1.5deg);
+    }
+
+    95% {
+        border-radius: 60% 40% 40% 60% / 46% 54% 64% 36%;
+        transform: translate(-2px, 1px) scale(1.07) rotate(-1deg);
+    }
+
+    100% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+        transform: translate(0px, 0px) scale(1) rotate(0deg);
+    }
+}
+
+
+.core{
+    animation: bouge 3s ease-out infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    object-fit: fill;
+    pointer-events: none; 
+}
+
+.tiki{
+    animation: spin 3s ease-out infinite;
+    position: absolute;
+    top: 34%;
+    left: 34%;
+    width: 30%;
+    height: 30%;
+    object-fit: fill;
+    pointer-events: none; 
+}
+
+.listen{
+    animation: hear 3s ease-out infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    object-fit: fill;
+    pointer-events: none; 
+    opacity: 0.6;
+}
+
+.spectrum{
+    animation: speak 5s cubic-bezier(.45,.05,.55,.95) infinite;
+    position: absolute;
+    left:30%;
+    top:15%;
+    width: 40%;
+    height: 65%;
+    object-fit: fill;
+    border: 6px solid rgba(22, 173, 211, 0.8);
+    pointer-events: none; 
+    opacity: 0.8;
+    filter: drop-shadow(0 0 20px rgba(63,227,255,0.8));
+}
+
+.compass {
+    animation: spin 1s ease-in-out infinite;
+    width: 15%;
+    height: 15%;
+    pointer-events: none; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

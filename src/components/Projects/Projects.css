@@ -1,0 +1,66 @@
+.projects {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: scroll;
+    background-color: rgba(58, 184, 216, 0.164);
+    border: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.proj-name {
+    position: relative;
+    align-items: center;
+    font-family: "Orbitron";
+    font-size: 1.5min;
+
+}
+
+.proj-card{
+    padding: 1.5%;
+    background-color: #c3a5f136;;
+    border: 2px solid rgba(255, 255, 255, 0.192);
+    color: white;
+    font-weight: bold;
+}
+
+.proj {
+    font-family: "Orbitron";
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.180);
+}
+
+.proj a {
+    background-color: rgba(140, 17, 255, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.192);
+    color: #c3a5f1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2vmin;
+}
+
+
+.proj a:visited {
+    color: #b175ff25;
+}
+
+.proj a:hover {
+    color: #e1d4f7;
+    text-decoration: dashed;
+    cursor: url('/src/assets/wing.png') 32 32, pointer;
+}
+
+.project-slider {
+    border: 2px solid rgba(255, 255, 255, 0.192);
+}
+
+.project-language {
+    font-size: 1.25vmin;
+    background-color: rgba(226, 234, 236, 0.842);
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    font-weight: bold;
+
+}
+
+.project-slider-header {
+    background-color: rgba(62, 169, 196, 0.062);
+    border: 1px solid rgba(255, 255, 255, 0.192);
+}

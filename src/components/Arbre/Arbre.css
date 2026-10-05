@@ -1,0 +1,28 @@
+.timeline-event {
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  background-color: rgba(58, 184, 216, 0.164);
+  border: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+.timeline-date {
+  padding-top: 3%;
+  background-color: rgba(255, 255, 255, 0.180);
+  border: 2px solid rgba(255, 255, 255, 0.192);
+  font-family: "Orbitron", sans-serif;
+  color: white;
+  overflow: hidden;
+
+}
+
+.timeline-card {
+  margin-top: -10%;
+  padding: 2%;
+  overflow: hidden;
+
+}
+
+.timeline-card img {
+  width: 50%;
+}

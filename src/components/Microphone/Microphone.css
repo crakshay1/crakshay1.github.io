@@ -1,0 +1,18 @@
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    cursor: url('/src/assets/wing.png') 32 32, pointer;
+
+    position: absolute;
+    left: 46.25%;
+    top: 80%;
+    transform: scale(0.5);
+
+}
+img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
