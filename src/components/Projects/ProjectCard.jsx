@@ -28,4 +28,4 @@ export default function ProjectCard({ project }) {
     );
 }
 
-// Oublie pas le z-index et de modifier proj voilà bisous je te laisse 
+// Oublie pas le z-index et de modifier proj voilà bisous je te laisse (le mec qui parle à lui même)

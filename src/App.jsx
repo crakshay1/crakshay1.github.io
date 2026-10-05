@@ -4,7 +4,6 @@ import Window from "./components/Window/Window";
 import Slide from "./components/Slides/Slides";
 import Arbre from "./components/Arbre/Arbre";
 import Projects from "./components/Projects/Projects";
-import { PiNetwork } from "react-icons/pi";
 
 function App() {
   const [muted, setMuted] = useState(true);
@@ -52,9 +51,9 @@ function App() {
       <div className="musicaaa">
             <button onClick={() => setMuted(!muted)}>
                 {muted ?
-                <img src="src/assets/music_off.png" alt="On" ></img> 
+                <img src="/music_off.png" alt="On" ></img> 
                 :
-                <img src="src/assets/music_on.png" alt="Off"></img>
+                <img src="/music_on.png" alt="Off"></img>
                 }
             </button>
             <p style={{position:"fixed", top: "87%", left: "40.5%"}}>Press cool button for cool lobby music</p>
