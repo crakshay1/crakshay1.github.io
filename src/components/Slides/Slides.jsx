@@ -27,7 +27,7 @@ export default function App() {
     >
         <SwiperSlide>
             <div className='image_slider'>
-                <img src="src/assets/jojo.gif"/>
+                <img src="/jojo.gif"/>
             </div>
             <div>
                 <p className='text_slider'>Mangas</p>
@@ -35,7 +35,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
             <div className='image_slider'>
-                <img src="src/assets/code.gif"/>
+                <img src="/code.gif"/>
             </div>
             <div>
                 <p className='text_slider'>Programming</p>
@@ -43,7 +43,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
             <div className='image_slider'>
-                <img src="src/assets/edit.gif"/>
+                <img src="/edit.gif"/>
             </div>
             <div>
                 <p className='text_slider'>Editing</p>
@@ -51,7 +51,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
             <div className='image_slider'>
-                <img src="src/assets/musica.gif"/>
+                <img src="/musica.gif"/>
             </div>
             <div>
                 <p className='text_slider'>Music</p>

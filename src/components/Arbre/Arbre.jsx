@@ -12,20 +12,20 @@ import './Arbre.css'
 const events = [
   {
     date: "2019 — 2022",
-    title: <img src="src/assets/MOLIERE.png"/>,
+    title: <img src="/MOLIERE.png"/>,
     name : "Cité Scolaire MOLIERE",
     subtitle: "French Baccalauréat",
     description: "NSI & SVT · Mention Très bien",
   },
   {
     date: "2022 — 2025",
-    title: <img src="src/assets/paris-saclay.png"/>,
+    title: <img src="/paris-saclay.png"/>,
     subtitle: "Double Licence",
     description: "Biology & Computer Science",
   },
   {
     date: "2025 — Now",
-    title: <img src="src/assets/paris-saclay.png"/>,
+    title: <img src="/paris-saclay.png"/>,
     subtitle: "Master GENIOMHE-AI",
     description:
       "Genomics, Informatics, Mathematics and Artificial Intelligence for Health and Environment",
